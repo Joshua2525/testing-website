@@ -102,6 +102,7 @@ input, textarea, select, button {
     margin-bottom: 25px; 
     margin-top: 10px;
     background: transparent;
+    color: gray;
 }
 .subtitle{
   color: rgba(139, 96, 236, 1);
@@ -134,12 +135,29 @@ textarea{
     border-radius: 10px;
     padding-top: 10px;
 }
+
+select{
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.select-wrapper{
+  position: relative;
+}
+.select-wrapper::after{
+  content: "▼";
+  font-size: 12px;
+  top: 46px;
+  right: 18px;
+  position: absolute;
+  color: #FFF5F5;
+}
+
      
   select {
     font-size: 14px;
     padding-left: 12px !important;
     cursor: pointer;
-    padding-left: 20px; 
     color: gray;
 }
     select option[value=""][disabled] {
@@ -197,10 +215,14 @@ textarea{
 
 
 @media (max-width: 550px) {
+  .inner{
+    margin: 0px !important;
+  }
   .form-section{
     padding: 0px 0px !important;
 
   .title-form{
+    margin-bottom: 50px;
     h1{
         font-size: 25px !important;
     }
@@ -208,8 +230,16 @@ textarea{
       font-size: 15px !important;
     }
   }
+  .select-wrapper::after{
+    content: "▼";
+    font-size: 11px;
+    top: 38px;
+    right: 18px;
+    position: absolute;
+    color: #FFF5F5;
+  }
+  
 }
-
   .inner{
     padding: 15px;
     width: 340px;
