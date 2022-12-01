@@ -93,11 +93,9 @@ nav{
    font-style: normal;
 
 /* identical to box height */
-
-text-align: center;
-letter-spacing: 0.06em;
-
-color: #FFFFFF;
+   text-align: center;
+   letter-spacing: 0.06em;
+   color: #FFFFFF;
  }
 
  .contact-button{
@@ -142,8 +140,8 @@ color: #FFFFFF;
 
 
     img{
-      width: 85px !important;
-      height: 30px;
+      width: 125px !important;
+      height: 50px;
   }
 
  }
@@ -155,7 +153,7 @@ color: #FFFFFF;
  }
  
  .burgerlines {
-    border-bottom: 4px solid #fff;
+    border-bottom: 3px solid #fff;
     height: 7px;
     width: 25px;
     cursor: pointer;
@@ -258,9 +256,13 @@ color: #FFFFFF;
       .logo {
      
          img{
-           width: 40px !important;
+           width: 80px !important;
            height: 20px;
        }
+      }
+      .navlinks .itemlinks{
+         font-weight: 400;
+         font-size: 14px;
       }
      }
    @media screen and (max-width:290px){
